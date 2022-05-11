@@ -5,15 +5,19 @@
   box-sizing: border-box;
   font-family: Verdana, sans-serif;
 }
-body{
- position: relative;
+body {
+  position: relative;
 }
-.carousel{
-width: 70%;
-height: 40%;
-align-items: center;
-margin: auto;  
-padding-top: 85px;
+.carousel {
+  width: 70%;
+  height: 40%;
+  align-items: center;
+  margin: auto;
+  padding-top: 160px;
+  margin-bottom: 50px;
+}
+.carousel-item {
+  max-height: 500px;
 }
 #fundo img {
   position: fixed;
@@ -22,67 +26,12 @@ padding-top: 85px;
   height: 100vh;
   width: 100vw;
 }
-header,
-footer {
-  background-color: #cdd7e7cf;
-  padding: 10px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 10;
-}
-header a {
-  color: rgb(230, 223, 223);
-  text-decoration: none;
-  transition: 0.25s;
-  font-family: "Blood";
-}
-header a:hover {
-  color: rgba(8, 97, 161, 0.924);
-}
-.titulo {
-  color: rgba(8, 97, 161, 0.924);
-  font-size: 24px;
-  margin-bottom: 10px;
-  font-family: "Blood";
-}
-.navegacao {
-  display: flex;
-  gap: 35px;
-}
-.navegacao li {
-  color: rgba(8, 97, 161, 0.924);
-  list-style: none;
-}
+
 .conteudo {
   margin: 10px 40px;
   padding-top: 80px;
 }
 
-.redes {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  gap: 10px;
-}
-.redes svg {
-  width: 24px;
-  height: 24px;
-  color: black;
-}
-.redes #mdi-linkedin {
-  width: 30px;
-  height: 30px;
-}
-.redes svg:hover {
-  color: rgb(144, 140, 140);
-}
 .container-cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -132,27 +81,7 @@ header a:hover {
   font-family: "Blood";
   letter-spacing: 2px;
 }
-footer {
-  color: rgba(8, 97, 161, 0.924);
-  margin-top: 50px;
-}
 
-footer p:first-child {
-  margin-bottom: 4px;
-}
-
-footer p:last-child {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
-footer .redes svg {
-  color: #fff;
-}
-
-footer .redes svg:hover {
-  color: rgb(144, 140, 140);
-}
 @media screen and (min-width: 500px) {
   .container-cards {
     grid-template-columns: 1fr 1fr;
@@ -160,7 +89,6 @@ footer .redes svg:hover {
 }
 
 @media screen and (min-width: 992px) {
-
   #fundo {
     background-image: url("http://www.osmais.com/wallpapers/201206/trapiche-mar-azul-wallpaper.jpg");
     background-size: cover;
@@ -174,15 +102,8 @@ footer .redes svg:hover {
   }
   #fundo img {
     display: none;
-  }header,
-  footer {
-    flex-direction: row;
-    justify-content: space-between;
   }
-  .titulo {
-    font-size: 28px;
-    margin-bottom: 0;
-  }
+
   .titulo-pagina h1 {
     font-size: 28px;
   }
@@ -207,11 +128,13 @@ footer .redes svg:hover {
   .container-news .formulario {
     padding: 50px 50px 30px;
   }
-  footer {
-    align-items: flex-end;
-  }
 
-  footer p:last-child {
-    margin-bottom: 0;
+  .carousel {
+    padding-top: 85px;
+    margin-bottom: 50px;
+  }
+  .carousel-item {
+    max-height: inherit;
+    height: 500px;
   }
 }

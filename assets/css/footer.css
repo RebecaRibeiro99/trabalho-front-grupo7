@@ -1,0 +1,62 @@
+
+footer {
+  background-color: #cdd7e7cf;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  color: rgba(8, 97, 161, 0.924);
+  margin-top: 50px;
+}
+
+footer p:first-child {
+  margin-bottom: 4px;
+}
+
+footer p:last-child {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+footer .redes svg {
+  color: #fff;
+}
+
+footer .redes svg:hover {
+  color: rgb(144, 140, 140);
+}
+.redes {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 10px;
+}
+.redes svg {
+  width: 24px;
+  height: 24px;
+  color: black;
+}
+.redes #mdi-linkedin {
+  width: 30px;
+  height: 30px;
+}
+.redes svg:hover {
+  color: rgb(144, 140, 140);
+}
+@media screen and (min-width: 992px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer {
+    align-items: flex-end;
+  }
+
+  footer p:last-child {
+    margin-bottom: 0;
+  }
+}

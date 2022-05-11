@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+  }
+  .container-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0 100px;
+    /* display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; */
+  }
+  .card {
+    border: 1px solid #333;
+    border-radius: 8px;
+    width: 250px;
+    margin: 20px 0;
+    box-shadow: 0 0 1em rgb(31, 70, 153);
+    transition: transform 0.25s linear;
+    background-color: #fff;
+  }
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  .card p {
+    padding: 10px;
+    text-align: center;
+    font-family: "Blood";
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  .card .container-botao {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .card a {
+    background-color: #aaabb3bb;
+    color: rgba(8, 97, 161, 0.924);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 6px;
+    font-family: "Blood";
+    letter-spacing: 2px;
+  }
+  @media screen and (min-width: 500px) {
+    .container-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .container-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .card {
+        margin: 30px 0;
+      }
+  }
+  

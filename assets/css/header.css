@@ -1,0 +1,47 @@
+header {
+  background-color: #cdd7e7cf;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+header a {
+  color: rgb(230, 223, 223);
+  text-decoration: none;
+  transition: 0.25s;
+  font-family: "Blood";
+}
+header a:hover {
+  color: rgba(8, 97, 161, 0.924);
+}
+.titulo {
+  color: rgba(8, 97, 161, 0.924);
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Blood";
+}
+.navegacao {
+  display: flex;
+  gap: 35px;
+}
+.navegacao li {
+  color: rgba(8, 97, 161, 0.924);
+  list-style: none;
+}
+@media screen and (min-width: 992px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .titulo {
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+}
