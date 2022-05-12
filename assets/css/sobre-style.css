@@ -3,7 +3,7 @@
   border: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .container-cards {
   display: grid;
@@ -13,6 +13,10 @@
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap; */
+}
+.alinhamento {
+  display: flex;
+  justify-content: center;
 }
 .card {
   border: 1px solid #333;
@@ -53,20 +57,19 @@
   margin: 6px;
 }
 .titulo-secao {
-    border-top: 1px solid rgb(24, 23, 23);
-    padding: 16px 0 10px;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-.container-sobre p{
-text-align: left;
-margin-left: 40px;
-margin-right: 40px;
-
+  border-top: 1px solid rgb(24, 23, 23);
+  padding: 16px 0 10px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
-#sobre h1{
-    text-align: center;
+.container-sobre p {
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#sobre h1 {
+  text-align: center;
 }
 @media screen and (min-width: 500px) {
   .container-cards {
@@ -74,11 +77,16 @@ margin-right: 40px;
   }
 }
 @media screen and (min-width: 992px) {
+  .alinhamento{
+    margin: 0 auto;
+    max-width: 1000px;
+  }
   .container-cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .card {
     margin: 30px 0;
   }
-  
 }
