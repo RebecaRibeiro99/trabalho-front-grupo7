@@ -5,6 +5,14 @@
   box-sizing: border-box;
   font-family: Verdana, sans-serif;
 }
+.btn-modal{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.btn-modal:hover{
+  box-shadow: none;
+}
 body {
   position: relative;
 }
@@ -13,11 +21,14 @@ body {
   height: 40%;
   align-items: center;
   margin: auto;
-  padding-top: 160px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
-.carousel-item {
-  max-height: 500px;
+.carousel-item img {
+  height: 200px;
+}
+.carousel-item p{
+  font-weight: 600;
 }
 #fundo img {
   position: fixed;
@@ -103,7 +114,7 @@ body {
   #fundo img {
     display: none;
   }
-
+  
   .titulo-pagina h1 {
     font-size: 28px;
   }
@@ -130,10 +141,10 @@ body {
   }
 
   .carousel {
-    padding-top: 85px;
+    margin-top: 85px;
     margin-bottom: 50px;
   }
-  .carousel-item {
+  .carousel-item img{
     max-height: inherit;
     height: 500px;
   }
