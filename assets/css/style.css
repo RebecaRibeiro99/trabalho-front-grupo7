@@ -5,6 +5,13 @@
   box-sizing: border-box;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.tituloCards{
+  text-align: center;
+  color: #1b49ed;
+  margin: 40px;
+  font-size: 20px;
+  
+}
 .btn-modal{
   border: 0;
   margin: 0;
@@ -22,8 +29,8 @@ body {
   height: 40%;
   align-items: center;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .carousel-item img {
   height: 200px;
@@ -127,7 +134,7 @@ font-size: 14px;
   }
 
   .carousel {
-    margin-top: 85px;
+    margin-top: 45px;
     margin-bottom: 50px;
   }
   .carousel-item img{
@@ -136,5 +143,9 @@ font-size: 14px;
   }
   .carousel-item h3{
     font-size: 24px;
+    }
+    .tituloCards{
+      margin-top: 40px;
+      font-size: 30px;
     }
 }
