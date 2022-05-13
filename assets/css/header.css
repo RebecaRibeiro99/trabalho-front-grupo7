@@ -2,8 +2,7 @@ header {
   background-color: #f4f3ef;
   padding: 10px 40px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   width: 100%;
@@ -35,6 +34,7 @@ header img {
 }
 .navegacao {
   display: flex;
+  flex-direction: column;
   gap: 35px;
   margin: 0;
 }
@@ -42,13 +42,142 @@ header img {
   color: rgba(8, 97, 161, 0.924);
   list-style: none;
 }
+.container-btn-menu{
+  position: relative;
+  position: relative;
+    margin-left: auto;
+    z-index: 1;
+}
+.btn-menu {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: -30px;
+    cursor: pointer;
+}
+.btn-left {
+background-color: #333;
+    position: absolute;
+    height: 8px;
+    width: 40px;
+    top: 25px;
+    right: -20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.btn-left:before {
+background-color: #333;
+    position: absolute;
+    width: 40px;
+    height: 8px;
+    content: "";
+    top: -15px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.btn-left:after {
+    background-color: #333;
+    position: absolute;
+    width: 40px;
+    height: 8px;
+    content: "";
+    top: 15px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.btn-right {
+background-color: #333;
+    position: absolute;
+    height: 8px;
+    width: 40px;
+    top: 25px;
+    left: 20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.btn-right:before {
+    background-color: #333;
+    position: absolute;
+    width: 40px;
+    height: 8px;
+    content: "";
+    top: -15px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.btn-right:after {
+    background-color: #333;
+    position: absolute;
+    width: 40px;
+    height: 8px;
+    content: "";
+    top: 15px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.active .btn-left {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background: transparent;
+    top: 8px;
+    right: -21px;
+}
+.active .btn-left:before {
+    -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+    transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+    top: 13px;
+}
+.active .btn-left:after {
+    -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+    transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+    top: 25px
+}
+.active .btn-right {
+     -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background: transparent;
+    top: 18px;
+    left: 22px;
+}
+.active .btn-right:before {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+  transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+    top: 4px;
+}
+.active .btn-right:after {
+    -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+    transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+    top: 15px;
+}
+
+.navegacao{
+  visibility: hidden;
+  padding: 30px;
+  position: absolute;
+  list-style: none;
+  right: 0px;
+  top: 0px;
+  padding-right: 120px;
+}
+.menu-active{
+    visibility: visible;
+    background-color: white;
+    height: 100vh;
+}
 @media screen and (min-width: 992px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
   .titulo {
     font-size: 28px;
     margin-bottom: 0;
+  }
+
+  .navegacao{
+    visibility: visible;
+    flex-direction: row;
+    padding-right: 30px;
+    background: transparent;
   }
 }
