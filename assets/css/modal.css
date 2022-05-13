@@ -1,0 +1,62 @@
+.modal-dialog {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-close {
+  right: 10px;
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 1rem;
+}
+
+.lado-esquerdo img,
+.lado-esquerdo iframe {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.lado-direito p {
+  max-height: 280px;
+  overflow: auto;
+}
+
+.btn-maps {
+  display: flex;
+  float: right;
+  padding: 8px 10px;
+}
+@media screen and (min-width: 992px) {
+  .modal-body {
+    display: flex;
+    height: 100%;
+    min-height: 450px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .lado-esquerdo {
+    max-width: 48%;
+    width: 100%;
+  }
+
+  .lado-esquerdo iframe {
+    height: 60%;
+  }
+
+  .lado-direito {
+    max-width: 48%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+  }
+}
