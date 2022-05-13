@@ -15,7 +15,6 @@ header a {
   color: #1b49ed;
   text-decoration: none;
   transition: 0.25s;
-  font-family: "Blood";
   padding: 5px;
   border-radius: 5px;
 }
@@ -33,7 +32,6 @@ header img {
   color: rgba(8, 97, 161, 0.924);
   font-size: 24px;
   margin-bottom: 10px;
-  font-family: "Blood";
 }
 .navegacao {
   display: flex;

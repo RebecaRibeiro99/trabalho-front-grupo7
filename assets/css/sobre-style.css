@@ -12,10 +12,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0 100px;
-  /* display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap; */
 }
 .alinhamento {
   display: flex;
@@ -50,7 +46,6 @@ body {
 .card p {
   padding: 10px;
   text-align: center;
-  font-family: "Blood";
   letter-spacing: 2px;
   font-size: 20px;
 }
@@ -81,6 +76,35 @@ body {
 #sobre h1 {
   text-align: center;
 }
+.redes {
+  display: flex;
+  justify-content:center;
+  list-style: none;
+}
+.redes svg {
+  width: 24px;
+  height: 24px;
+  color: black;
+}
+.redes #mdi-linkedin {
+  width: 30px;
+  height: 30px;
+}
+.redes svg:hover {
+  color: rgb(144, 140, 140);
+}
+.redes a{
+  background-color: transparent;
+}
+.redes ul{
+  align-items: center;
+}
+ol, ul {
+   padding-left: 0rem;
+  }
+#sobre{
+  scroll-padding-top: 3rem;
+}
 @media screen and (min-width: 500px) {
   .container-cards {
     grid-template-columns: 1fr 1fr;
@@ -88,7 +112,7 @@ body {
 }
 @media screen and (min-width: 992px) {
   #fundo {
-    background-image: url("http://www.osmais.com/wallpapers/201206/trapiche-mar-azul-wallpaper.jpg");
+    background-image: url("https://media.discordapp.net/attachments/954181991409020968/974681888260231208/trapiche-mar-azul-wallpaper.jpg?width=649&height=406");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;

@@ -3,16 +3,17 @@
   border: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .btn-modal{
   border: 0;
   margin: 0;
   padding: 0;
 }
-.btn-modal:hover{
+.btn-modal:hover, .btn-modal:focus-within{
   box-shadow: none;
 }
+
 body {
   position: relative;
 }
@@ -27,8 +28,8 @@ body {
 .carousel-item img {
   height: 200px;
 }
-.carousel-item p{
-  font-weight: 600;
+.carousel-item h3{
+font-size: 14px;
 }
 #fundo img {
   position: fixed;
@@ -74,23 +75,8 @@ body {
 .card p {
   padding: 10px;
   text-align: center;
-  font-family: "Blood";
   letter-spacing: 2px;
   font-size: 20px;
-}
-.card .container-botao {
-  display: flex;
-  justify-content: flex-end;
-}
-.card a {
-  background-color: #aaabb3bb;
-  color: rgba(8, 97, 161, 0.924);
-  border-radius: 5px;
-  text-decoration: none;
-  padding: 8px 16px;
-  margin: 6px;
-  font-family: "Blood";
-  letter-spacing: 2px;
 }
 
 @media screen and (min-width: 500px) {
@@ -101,7 +87,7 @@ body {
 
 @media screen and (min-width: 992px) {
   #fundo {
-    background-image: url("http://www.osmais.com/wallpapers/201206/trapiche-mar-azul-wallpaper.jpg");
+    background-image: url("https://media.discordapp.net/attachments/954181991409020968/974681888260231208/trapiche-mar-azul-wallpaper.jpg?width=649&height=406");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -148,4 +134,7 @@ body {
     max-height: inherit;
     height: 500px;
   }
+  .carousel-item h3{
+    font-size: 24px;
+    }
 }

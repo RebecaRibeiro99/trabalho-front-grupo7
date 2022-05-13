@@ -20,32 +20,6 @@ footer p:last-child {
   font-size: 12px;
   margin-bottom: 10px;
 }
-
-footer .redes svg {
-  color: #fff;
-}
-
-footer .redes svg:hover {
-  color: rgb(144, 140, 140);
-}
-.redes {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  gap: 10px;
-}
-.redes svg {
-  width: 24px;
-  height: 24px;
-  color: black;
-}
-.redes #mdi-linkedin {
-  width: 30px;
-  height: 30px;
-}
-.redes svg:hover {
-  color: rgb(144, 140, 140);
-}
 .copyright {
   font-style: italic;
   text-align: center;
